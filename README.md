@@ -12,6 +12,8 @@
 
   - [Bibliotecas](#bibliotecas)
 
+  - [Outras Ferramentas](#outras-ferramentas)
+
 ## Desenvolvimento
 
 ### Configurações Iniciais
@@ -42,4 +44,14 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 - [react-router-dom](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-router-dom.md)
 
+- [reactotron-react-js](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reactotron-react-js.md)
+
+- [reactotron-redux](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reactotron-redux.md)
+
+- [reactotron-redux-saga](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reactotron-redux-saga.md)
+
 - [styled-components](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/styled-components.md)
+
+### Outras Ferramentas
+
+- [Reactotron](https://github.com/osvaldokalvaitir/projects-settings/blob/master/inspectors/reactotron.md)
