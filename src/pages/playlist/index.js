@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Creators as PlaylistDetailsActions } from '../../store/ducks/playlistDetails';
+import { Creators as PlayerActions } from '../../store/ducks/player';
 
 import { Container, Header, SongList } from './styles';
 
@@ -25,16 +26,19 @@ class Playlist extends Component {
         thumbnail: PropTypes.string,
         title: PropTypes.title,
         description: PropTypes.description,
-        songs: PropTypes.arrayOf(PropTypes.shape({
-          id: PropTypes.number,
-          title: PropTypes.title,
-          author: PropTypes.string,
-          album: PropTypes.string,
-        })),
+        songs: PropTypes.arrayOf(
+          PropTypes.shape({
+            id: PropTypes.number,
+            title: PropTypes.title,
+            author: PropTypes.string,
+            album: PropTypes.string,
+          }),
+        ),
       }).isRequired,
       loading: PropTypes.bool,
     }).isRequired,
-  }
+    loadSong: PropTypes.func.isRequired,
+  };
 
   componentDidMount() {
     this.loadPlaylistDetails();
@@ -57,53 +61,50 @@ class Playlist extends Component {
 
     return (
       <Container>
-      <Header>
-        <img
-          src={playlist.thumbnail}
-          alt={playlist.title}
-        />
+        <Header>
+          <img src={playlist.thumbnail} alt={playlist.title} />
 
-        <div>
-          <span>PLAYLIST</span>
-          <h1>{playlist.title}</h1>
-          { !!playlist.songs && <p>{playlist.songs.length} músicas</p> }
+          <div>
+            <span>PLAYLIST</span>
+            <h1>{playlist.title}</h1>
+            {!!playlist.songs && (<p>{playlist.songs.length} músicas</p>)}
 
-          <button>PLAY</button>
-        </div>
-      </Header>
+            <button>PLAY</button>
+          </div>
+        </Header>
 
-      <SongList cellPadding={0} cellSpacing={0}>
-        <thead>
-          <th />
-          <th>Título</th>
-          <th>Artista</th>
-          <th>Álbum</th>
-          <th>
-            <img src={ClockIcon} alt="Duração" />
-          </th>
-        </thead>
+        <SongList cellPadding={0} cellSpacing={0}>
+          <thead>
+            <th />
+            <th>Título</th>
+            <th>Artista</th>
+            <th>Álbum</th>
+            <th>
+              <img src={ClockIcon} alt="Duração" />
+            </th>
+          </thead>
 
-        <tbody>
-          {!playlist.songs ? (
-            <tr>
-              <td colSpan={5}>Nenhuma música cadastrada</td>
-            </tr>
-          ) : (
-            playlist.songs.map(song => (
-              <tr key={song.id}>
-                <td>
-                  <img src={PlusIcon} alt="Adicionar" />
-                </td>
-                <td>{song.title}</td>
-                <td>{song.author}</td>
-                <td>{song.album}</td>
-                <td>3:26</td>
+          <tbody>
+            {!playlist.songs ? (
+              <tr>
+                <td colSpan={5}>Nenhuma música cadastrada</td>
               </tr>
-            ))
-          )}          
-        </tbody>
-      </SongList>
-    </Container>
+            ) : (
+              playlist.songs.map(song => (
+                <tr key={song.id} onDoubleClick={() => this.props.loadSong(song)}>
+                  <td>
+                    <img src={PlusIcon} alt="Adicionar" />
+                  </td>
+                  <td>{song.title}</td>
+                  <td>{song.author}</td>
+                  <td>{song.album}</td>
+                  <td>3:26</td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </SongList>
+      </Container>
     );
   };
 
@@ -122,7 +123,7 @@ const mapStateToProps = state => ({
   playlistDetails: state.playlistDetails,
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators(PlaylistDetailsActions, dispatch);
+const mapDispatchToProps = dispatch => bindActionCreators({ ...PlaylistDetailsActions, ...PlayerActions }, dispatch);
 
 export default connect(
   mapStateToProps,
