@@ -23,17 +23,17 @@ export const Current = styled.div`
     margin-left: 12px;
     display: flex;
     flex-direction: column;
-  }
 
-  span {
-    font-size: 13px;
-    color: #fff;
-  }
+    span {
+      font-size: 13px;
+      color: #fff;
+    }
 
-  small {
-    font-size: 11px;
-    color: #b3b3b3;
-    margin-top: 5px;
+    small {
+      font-size: 11px;
+      color: #b3b3b3;
+      margin-top: 5px;
+    }
   }
 `;
 
@@ -62,6 +62,8 @@ export const Time = styled.div`
   span {
     font-size: 11px;
     color: #b3b3b3;
+    width: 35px;
+    text-align: center;
   }
 `;
 
