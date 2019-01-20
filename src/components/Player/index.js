@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Slider from 'rc-slider';
 import Sound from 'react-sound';
 import PropTypes from 'prop-types';
@@ -22,15 +22,19 @@ const Player = ({ player }) => (
     {!!player.currentSong && <Sound url={player.currentSong.file} playStatus={player.status} />}
 
     <Current>
-      <img
-        src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/Stargroves-album-cover.png?auto=format&q=60&fit=max&w=930"
-        alt="Cover"
-      />
+      { !!player.currentSong && (
+        <Fragment>
+          <img
+            src={player.currentSong.thumbnail}
+            alt={player.currentSong.title}
+          />
 
-      <div>
-        <span>Times like these</span>
-        <small>Foo Fighters</small>
-      </div>
+          <div>
+            <span>{player.currentSong.title}</span>
+            <small>{player.currentSong.author}</small>
+          </div>
+        </Fragment>
+      )}
     </Current>
 
     <Progress>
@@ -80,6 +84,9 @@ const Player = ({ player }) => (
 Player.propTypes = {
   player: PropTypes.shape({
     currentSong: PropTypes.shape({
+      thumbnail: PropTypes.string,
+      title: PropTypes.string,
+      author: PropTypes.string,
       file: PropTypes.string,
     }),
     status: PropTypes.string,
