@@ -101,7 +101,7 @@ class Playlist extends Component {
                 <SongItem 
                   key={song.id}
                   onClick={() => this.setState({ selectedSong: song.id })}
-                  onDoubleClick={() => this.props.loadSong(song)}
+                  onDoubleClick={() => this.props.loadSong(song, playlist.songs)}
                   selected={this.state.selectedSong === song.id}
                   playing={this.props.currentSong && this.props.currentSong.id === song.id}
                 >
