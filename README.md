@@ -1,6 +1,16 @@
 # ReactJS - Módulo 4
 
+Spotify Application usando Redux, Redux-Saga, Ducks, React Router, react-sound, React Slider, styled-components, JSON Server e Reactotron.
+
 ## Índice
+
+- [Telas](#telas)
+
+  - [Navegar](#navegar)
+
+  - [Playlist](#playlist)
+
+- [Rotas](#rotas)
 
 - [Desenvolvimento](#desenvolvimento)
 
@@ -15,6 +25,24 @@
   - [Bibliotecas](#bibliotecas)
 
   - [Outras Ferramentas](#outras-ferramentas)
+
+## Telas
+
+### Navegar
+
+![Browse](/assets/browse.png)
+Esta é a primeira tela, onde encontram-se todas as playlists vindas da API.
+
+### Playlist
+
+![Playlist](/assets/playlist.png)
+Nesta tela estão todas as músicas da playlist selecionada, podendo selecioná-las com um clique ou executá-las com um duplo clique, também é possível dar pause, play, ir para a próxima, ir para a anterior, escolher uma parte da música pelo controle deslizante ou ajustar o volume da música.
+
+## Rotas
+
+- Busca todas as playlists
+
+- Busca todas as músicas da playlist selecionada
 
 ## Desenvolvimento
 

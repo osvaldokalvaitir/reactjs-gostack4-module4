@@ -61,25 +61,25 @@ const Player = ({
 
     <Progress>
       <Controls>
-        <button>
+        <button type="button">
           <img src={ShuffleIcon} alt="Shuffle" />
         </button>
-        <button onClick={prev}>
+        <button type="button" onClick={prev}>
           <img src={BackwardIcon} alt="Backward" />
         </button>
         { !!player.currentSong && player.status === Sound.status.PLAYING ? (
-          <button onClick={pause}>
+          <button type="button" onClick={pause}>
             <img src={PauseIcon} alt="Pause" />
           </button>
         ) : (
-          <button onClick={play}>
+          <button type="button" onClick={play}>
             <img src={PlayIcon} alt="Play" />
           </button>
         ) }
-        <button onClick={next}>
+        <button type="button" onClick={next}>
           <img src={ForwardIcon} alt="Forward" />
         </button>
-        <button>
+        <button type="button">
           <img src={RepeatIcon} alt="Repeat" />
         </button>
       </Controls>
