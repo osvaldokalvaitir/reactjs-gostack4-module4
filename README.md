@@ -1,6 +1,6 @@
 # ReactJS - Módulo 4
 
-Spotify Application usando Redux, Redux-Saga, Ducks, React Router, react-sound, React Slider, styled-components, JSON Server e Reactotron.
+Aplicação Spotify usando Redux, Redux-Saga, Ducks, React Router, react-sound, React Slider, styled-components, JSON Server e Reactotron.
 
 ## Índice
 
