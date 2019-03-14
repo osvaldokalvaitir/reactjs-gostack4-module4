@@ -6,7 +6,9 @@ import { bindActionCreators } from 'redux';
 import { Creators as PlaylistDetailsActions } from '../../store/ducks/playlistDetails';
 import { Creators as PlayerActions } from '../../store/ducks/player';
 
-import { Container, Header, SongList, SongItem } from './styles';
+import {
+  Container, Header, SongList, SongItem,
+} from './styles';
 
 import Loading from '../../components/Loading';
 
@@ -24,12 +26,12 @@ class Playlist extends Component {
     playlistDetails: PropTypes.shape({
       data: PropTypes.shape({
         thumbnail: PropTypes.string,
-        title: PropTypes.title,
-        description: PropTypes.description,
+        title: PropTypes.string,
+        description: PropTypes.string,
         songs: PropTypes.arrayOf(
           PropTypes.shape({
             id: PropTypes.number,
-            title: PropTypes.title,
+            title: PropTypes.string,
             author: PropTypes.string,
             album: PropTypes.string,
           }),
@@ -74,7 +76,13 @@ class Playlist extends Component {
           <div>
             <span>PLAYLIST</span>
             <h1>{playlist.title}</h1>
-            {!!playlist.songs && (<p>{playlist.songs.length} músicas</p>)}
+            {!!playlist.songs && (
+<p>
+{playlist.songs.length}
+{' '}
+músicas
+</p>
+)}
 
             <button>PLAY</button>
           </div>
@@ -98,7 +106,7 @@ class Playlist extends Component {
               </tr>
             ) : (
               playlist.songs.map(song => (
-                <SongItem 
+                <SongItem
                   key={song.id}
                   onClick={() => this.setState({ selectedSong: song.id })}
                   onDoubleClick={() => this.props.loadSong(song, playlist.songs)}
