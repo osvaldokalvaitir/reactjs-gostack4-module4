@@ -14,13 +14,11 @@ Aplicação Spotify usando Redux, Redux-Saga, Ducks, React Router, react-sound, 
 
 ## Índice
 
-- [Telas](#telas)
+- [Capturas de Tela](#capturas-de-tela)
 
   - [Navegar](#navegar)
 
   - [Playlist](#playlist)
-
-- [Rotas](#rotas)
 
 - [Desenvolvimento](#desenvolvimento)
 
@@ -32,11 +30,15 @@ Aplicação Spotify usando Redux, Redux-Saga, Ducks, React Router, react-sound, 
 
   - [Execução da API](#execução-da-api)
 
+- [Utilizados no Projeto](#utilizados-no-projeto)
+
   - [Bibliotecas](#bibliotecas)
 
-  - [Outras Ferramentas](#outras-ferramentas)
+  - [APIs](#apis)
 
-## Telas
+  - [Ferramentas](#ferramentas)
+
+## Capturas de Tela
 
 ### Navegar
 
@@ -47,12 +49,6 @@ Esta é a primeira tela, onde encontram-se todas as playlists vindas da API.
 
 ![Playlist](/assets/playlist.png)
 Nesta tela estão todas as músicas da playlist selecionada, podendo selecioná-las com um clique ou executá-las com um duplo clique, também é possível dar pause, play, ir para a próxima, ir para a anterior, escolher uma parte da música pelo controle deslizante ou ajustar o volume da música.
-
-## Rotas
-
-- Busca todas as playlists
-
-- Busca todas as músicas da playlist selecionada
 
 ## Desenvolvimento
 
@@ -71,6 +67,8 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 ### Execução da API
 
 Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/json-server.md) e siga a Execução de API.
+
+## Utilizados no Projeto
 
 ### Bibliotecas
 
@@ -112,6 +110,17 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 - [styled-components](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/styled-components.md)
 
-### Outras Ferramentas
+### APIs
+
+- **API do Json Server**
+
+  - **Rotas**
+
+    - Playlists
+
+      - Busca dados de todas as playlists
+      - Busca dados de todas as músicas de uma playlist
+
+### Ferramentas
 
 - [Reactotron](https://github.com/osvaldokalvaitir/projects-settings/blob/master/inspector/reactotron.md)
