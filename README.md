@@ -26,7 +26,9 @@ Aplicação Spotify usando Redux, Redux-Saga, Ducks, React Router, react-sound, 
 
   - [Instalação do Projeto](#instalação-do-projeto)
 
-  - [Execução do Projeto](#execução-do-projeto)
+  - [Execução do Projeto para Desenvolvimento](#execução-do-projeto-para-desenvolvimento)
+  
+  - [Construção e Execução do Projeto para Produção](#construção-e-execução-do-projeto-para-produção)
 
   - [Execução da API](#execução-da-api)
 
@@ -60,9 +62,13 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/nodejs.md) e siga `Instalação de Projeto`.
 
-### Execução do Projeto
+### Execução do Projeto para Desenvolvimento
 
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/create-react-app.md) e siga `Execução de Projeto`.
+Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/create-react-app.md) e siga `Execução de Projeto para Desenvolvimento`.
+
+### Construção e Execução do Projeto para Produção
+
+Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/create-react-app.md) e siga `Construção e Execução de Projeto para Produção`.
 
 ### Execução da API
 
