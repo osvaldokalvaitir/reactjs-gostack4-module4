@@ -42,12 +42,12 @@ Aplicação Spotify usando Redux, Redux-Saga, Ducks, React Router, react-sound, 
 
 ### Navegar
 
-![Browse](/assets/browse.png)
+![Browse](/.github/assets/browse.png)
 Esta é a primeira tela, onde encontram-se todas as playlists vindas da API.
 
 ### Playlist
 
-![Playlist](/assets/playlist.png)
+![Playlist](/.github/assets/playlist.png)
 Nesta tela estão todas as músicas da playlist selecionada, podendo selecioná-las com um clique ou executá-las com um duplo clique, também é possível dar pause, play, ir para a próxima, ir para a anterior, escolher uma parte da música pelo controle deslizante ou ajustar o volume da música.
 
 ## Desenvolvimento
