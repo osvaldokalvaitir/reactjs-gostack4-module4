@@ -1,126 +1,64 @@
-# ReactJS - Módulo 4
+<h1 align="center">
+    <img src="/.github/assets/logo.png"
+    width="200px"
+    alt="Logo" />
+</h1>
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/osvaldokalvaitir/reactjs-modulo4/blob/master/LICENSE)
-![](https://img.shields.io/github/package-json/v/osvaldokalvaitir/reactjs-modulo4.svg)
-![](https://img.shields.io/github/last-commit/osvaldokalvaitir/reactjs-modulo4.svg?color=red)
-![](https://img.shields.io/github/languages/top/osvaldokalvaitir/reactjs-modulo4.svg?color=yellow)
-![](https://img.shields.io/github/languages/count/osvaldokalvaitir/reactjs-modulo4.svg?color=lightgrey)
-![](https://img.shields.io/github/languages/code-size/osvaldokalvaitir/reactjs-modulo4.svg)
-![](https://img.shields.io/github/repo-size/osvaldokalvaitir/reactjs-modulo4.svg?color=blueviolet)
-[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+<h3 align="center">
+  ReactJS - GoStack 4 Module 4
+</h3>
 
-Aplicação Spotify usando Redux, Redux-Saga, Ducks, React Router, react-sound, React Slider, styled-components, JSON Server e Reactotron.
+<p align="center">
+  :musical_note: Spotify Application using Redux, Redux-Saga, Ducks, React Router, react-sound, React Slider, styled-components, Reactotron and consuming the features of the JSON Server API
+</p>
 
-## Índice
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/osvaldokalvaitir/reactjs-gostack4-module4.svg?color=00A83A">
 
-- [Capturas de Tela](#capturas-de-tela)
+  <img alt="GitHub language top" src="https://img.shields.io/github/languages/top/osvaldokalvaitir/reactjs-gostack4-module4.svg?color=00A83A">
 
-  - [Navegar](#navegar)
+  <a href="https://kalvaitir.com/">
+    <img alt="Made by Kalvaitir" src="https://img.shields.io/badge/made%20by-Kalvaitir-00A83A">
+  </a>
 
-  - [Playlist](#playlist)
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-00A83A">
+</p>
 
-- [Desenvolvimento](#desenvolvimento)
+<p align="center">
+  <a href="#computer-demo">Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#wrench-install-and-run">Install and run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#memo-license">License</a>
+</p>
 
-  - [Configuração do Ambiente](#configuração-do-ambiente)
+## :computer: Demo
 
-  - [Instalação do Projeto](#instalação-do-projeto)
+![Demo](/.github/assets/demo.gif)
 
-  - [Execução do Projeto](#execução-do-projeto)
+## :wrench: Install and run
 
-  - [Execução da API](#execução-da-api)
+Open terminal:
 
-- [Utilizados no Projeto](#utilizados-no-projeto)
+```sh
+# Clone this repo
+git clone https://github.com/osvaldokalvaitir/reactjs-gostack4-module4
 
-  - [Bibliotecas](#bibliotecas)
+# Entry in folder
+cd reactjs-gostack4-module4
 
-  - [APIs](#apis)
+# Install deps with npm or yarn
+npm install | yarn
 
-  - [Ferramentas](#ferramentas)
+# Run API
+json-server server.json
 
-## Capturas de Tela
+# Launch the app with npm or yarn
+npm start | yarn start
+```
 
-### Navegar
+## :memo: License
 
-![Browse](/.github/assets/browse.png)
-Esta é a primeira tela, onde encontram-se todas as playlists vindas da API.
+This project is under the MIT license. See [LICENSE](/LICENSE) for more information.
 
-### Playlist
+---
 
-![Playlist](/.github/assets/playlist.png)
-Nesta tela estão todas as músicas da playlist selecionada, podendo selecioná-las com um clique ou executá-las com um duplo clique, também é possível dar pause, play, ir para a próxima, ir para a anterior, escolher uma parte da música pelo controle deslizante ou ajustar o volume da música.
-
-## Desenvolvimento
-
-### Configuração do Ambiente
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/README.md) e siga `Configuração de Ambiente`.
-
-### Instalação do Projeto
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/nodejs.md) e siga `Instalação de Projeto`.
-
-### Execução do Projeto
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/create-react-app.md) e siga `Execução de Projeto para Desenvolvimento` ou `Construção e Execução de Projeto para Produção`.
-
-### Execução da API
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/json-server.md) e siga `Execução de API`.
-
-## Utilizados no Projeto
-
-### Bibliotecas
-
-- [Axios](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/axios.md)
-
-- [Create React App](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/create-react-app.md)
-
-- [Ducks](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/ducks.md)
-
-- [eslint-config-airbnb](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint-config-airbnb.md)
-
-- [eslint-plugin-import](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint-plugin-import.md)
-
-- [eslint-plugin-jsx-a11y](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint-plugin-jsx-a11y.md)
-
-- [eslint-plugin-react](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint-plugin-react.md)
-
-- [JSON Server](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/json-server.md)
-
-- [prop-types](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/prop-types.md)
-
-- [React Redux](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-redux.md)
-
-- [React Slider](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/rc-slider.md)
-
-- [react-router-dom](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-router-dom.md)
-
-- [react-sound](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-sound.md)
-
-- [reactotron-react-js](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reactotron-react-js.md)
-
-- [reactotron-redux](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reactotron-redux.md)
-
-- [reactotron-redux-saga](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reactotron-redux-saga.md)
-
-- [Redux](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/redux.md)
-
-- [Redux-Saga](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/redux-saga.md)
-
-- [styled-components](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/styled-components.md)
-
-### APIs
-
-- **API do Json Server**
-
-  - **Rotas**
-
-    - Playlists
-
-      - Busca dados de todas as playlists
-      - Busca dados de todas as músicas de uma playlist
-
-### Ferramentas
-
-- [Reactotron](https://github.com/osvaldokalvaitir/projects-settings/blob/master/inspector/reactotron.md)
+<p align="center">
+Developed with 💚 by <a href="https://www.linkedin.com/in/osvaldokalvaitir">Osvaldo Kalvaitir Filho</a>
+</p>
