@@ -53,6 +53,8 @@ json-server server.json
 npm start | yarn start
 ```
 
+Click to learn more about the tools used: [Reactotron](https://github.com/osvaldokalvaitir/awesome/blob/main/src/apps-inspectors/reactotron.md).
+
 ## :memo: License
 
 This project is under the MIT license. See [LICENSE](/LICENSE) for more information.
